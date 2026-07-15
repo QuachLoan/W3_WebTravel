@@ -1,0 +1,62 @@
+:root{
+
+    --primary:#004D40;
+    --secondary:#ffb300;
+
+    --text:#1F2937;
+    --text-light:#6B7280;
+
+    --background:#F8FAFC;
+
+    --border:#E5E7EB;
+    
+
+}
+
+body{
+
+    font-family:"Plus Jakarta Sans",sans-serif;
+    background:var(--background);
+    color:var(--text);
+
+}
+
+/* Header */
+
+.header{
+
+    background:#fff;
+
+}
+/* .logo-text{
+    color:var(--primary)!important;
+    font-size:2rem;
+    letter-spacing:1px;
+
+} */
+.logo-text{
+ font-size:32px;
+font-weight:700;
+letter-spacing:1.5;
+}
+
+.logo-text span:first-child{
+    color: var(--primary);
+}
+
+.logo-text span:last-child{
+    color: var(--secondary);
+     margin-left:3px;
+}
+.navbar-nav{
+font-size:17px;
+font-weight:500;
+}
+
+
+.footer{
+    padding: 50px 0px 50px 0px;
+background-color: #DDEFE5;
+ color:var(--text);
+
+}
