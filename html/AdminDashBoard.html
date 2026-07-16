@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel = "stylesheet" href = "../css/AdminDashBoard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class = "sidebar">
+        <ul class = "sidebar-menu">
+            <li><a href = "AdminDashBoard.html" class = "active"><i class = "fa-solid fa-chart-simple"></i>DashBoard</a></li>
+            <li><a href = "tours_home.html"><i class = "fa-solid fa-route"></i>Tours</a></li>
+            <li><a href = "TourBookingForm.html"><i class = "fa-solid fa-calendar-check"></i>Booking</a></li>
+            <li><a href = "UserProfile.html"><i class = "fa-solid fa-users"></i>Profile</a></li>
+            <li><a href = "PaymentConfirmation.html"><i class = "fa-solid fa-credit-card"></i>Payment</a></li>
+        </ul>
+    </div>
+    <main class = "main-content">
+        <header class = "main-header">
+            <h2>DASHBOARD</h2>
+        </header>
+        <div class = "main-card">
+            <div class = "total-revenue">
+                <p>Total Revenue</p>
+                <h1>$15,450,000</h1>
+            </div>
+            <div class = "active-tour">
+                <p>Active Tours</p>
+                <h1>45</h1>
+            </div>
+            <div class = "new-booking">
+                <p>New Bookings</p>
+                <h1>1,250</h1>
+            </div>
+            <div class = "total-user">
+                <p>Total Users</p>
+                <h1>85</h1>
+            </div>
+        </div>
+        <div class = "chart">
+            <div class = "chart-header">
+                <div class = "chart-title">Revenue vs Bookings</div>
+                <div class = "legend">
+                    <div class = "legend-item">
+                        <span class = "color-dot blue-dot"></span> Revenue
+                    </div>
+                    <div class = "legend-item">
+                        <span class = "color-dot grey-dot"></span> Bookings
+                    </div>
+                </div>
+            </div>
+            <div class = "chart-body">
+                <svg viewBox="0 0 1200 250" preserveAspectRatio="none">
+                    <line x1="0" y1="50" x2="1200" y2="50" stroke="#f1f5f9" stroke-width="1.5" />
+                    <line x1="0" y1="100" x2="1200" y2="100" stroke="#f1f5f9" stroke-width="1.5" />
+                    <line x1="0" y1="150" x2="1200" y2="150" stroke="#f1f5f9" stroke-width="1.5" />
+                    <line x1="0" y1="200" x2="1200" y2="200" stroke="#f1f5f9" stroke-width="1.5" />
+                    <path d="M0,170 C100,140 200,130 300,170 C400,210 500,110 600,150 C700,190 800,80 900,140 C1000,200 1100,80 1200,130 L1200,250 L0,250 Z"
+                          fill="rgba(37, 99, 235, 0.15)" />
+                    <path d="M0,170 C100,140 200,130 300,170 C400,210 500,110 600,150 C700,190 800,80 900,140 C1000,200 1100,80 1200,130"
+                          fill="none" stroke="#2563eb" stroke-width="3" />
+                    <path d="M0,210 C100,180 200,160 300,190 C400,220 500,150 600,180 C700,210 800,110 900,160 C1000,210 1100,120 1200,150 L1200,250 L0,250 Z"
+                          fill="rgba(71, 85, 105, 0.15)" />
+                    <path d="M0,210 C100,180 200,160 300,190 C400,220 500,150 600,180 C700,210 800,110 900,160 C1000,210 1100,120 1200,150"
+                          fill="none" stroke="#475569" stroke-width="3" />
+                </svg>
+            </div>
+            <div class="months">
+                <span>Jan</span><span>Feb</span><span>Mar</span><span>Apr</span><span>May</span><span>Jun</span>
+                <span>Jul</span><span>Aug</span><span>Sep</span><span>Oct</span><span>Nov</span><span>Dec</span>
+            </div>
+        </div>
+        <div class = "two-chart">
+            <div class = "pie-chart">
+                <div class = "pie-title">
+                    Tour Distribution
+                </div>
+                <div class = "pie-visual"></div>
+                <div class = "pie-body"></div>
+                <div class = "pie-legend">
+                    <div class = "legend-item">
+                        <span class="color-box" style="background-color: #2563eb;"></span>Adventure(30%)
+                    </div>
+                    <div class = "legend-item">
+                        <span class="color-box" style="background-color: #374151;"></span>Cultural(20%)
+                    </div>
+                    <div class = "legend-item">
+                        <span class="color-box" style="background-color: #9ca3af;"></span>Luxury(15%)
+                    </div>
+                    <div class = "legend-item">
+                        <span class="color-box" style="background-color: #475569;"></span>Relax(35%)
+                    </div>
+                </div>
+            </div>
+            <div class = "line-chart">
+                <div class = "line-title">Top Performing Destinations</div>
+                <div class = "line-visual">
+                    <div class="line-path"></div>
+                    <div class="chart-dot" style="left: 0%; top: 80%;">
+                        <span class = "dot-label">Bali</span>
+                    </div>
+                    <div class="chart-dot" style="left: 20%; top: 50%;">
+                        <span class = "dot-label">Paris</span>
+                    </div>
+                    <div class="chart-dot" style="left: 40%; top: 70%;">
+                        <span class = "dot-label">Tokyo</span>
+                    </div>
+                    <div class="chart-dot" style="left: 60%; top: 30%;">
+                        <span class = "dot-label">New York</span>
+                    </div>
+                    <div class="chart-dot" style="left: 80%; top: 45%;">
+                        <span class = "dot-label">London</span>
+                    </div>
+                    <div class="chart-dot" style="left: 100%; top: 10%;">
+                        <span class = "dot-label">Sydney</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,334 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+body{
+    display: flex;
+    height: 100vh;
+    background-color: #f1f5f9;
+}
+
+.sidebar{
+    width: 240px;
+    background-color: #1e293b;
+    color: #94a3b8;
+    display: flex;
+    flex-direction: column;
+    height: 900px;
+}
+
+.sidebar-menu {
+    margin-top: 20px;
+    list-style: none;
+}
+
+.sidebar-menu a {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 14px 24px;
+    color: #94a3b8;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.2s;
+    border-radius: 5px;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+.sidebar-menu a:hover,
+.sidebar-menu a.active {
+    color: #ffffff;
+    background-color: #334155;
+}
+.sidebar-menu i {
+    width: 20px;
+}
+
+.main-header{
+    margin-left: 20px;
+}
+
+.active{
+    margin-top: 40px;
+}
+
+.main-content{
+    display: flex;
+    padding: 30px;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.total-revenue{
+    background: linear-gradient(135deg, #1e40af, #3b82f6);
+    color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    min-height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    overflow: hidden;
+}
+
+.active-tour{
+    background: linear-gradient(135deg, #1e293b, #475569);
+    color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    min-height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    overflow: hidden;
+}
+
+.new-booking{
+    background: linear-gradient(135deg, #1e40af, #3b82f6);
+    color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    min-height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    overflow: hidden;
+}
+
+.total-user{
+    background: linear-gradient(135deg, #1e293b, #475569);
+    color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    min-height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    overflow: hidden;
+}
+
+.main-card{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    width: 1250px;
+}
+
+.main-header{
+    margin-left: -1px;
+}
+
+.chart-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.chart{
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 1500px;
+    padding: 24px;
+    border-radius: 12px;
+    border: 1px solid #e2e8f0;
+}
+
+.chart-title{
+    font-size: 18px;
+    font-weight: bold;
+    color: #1e293b;
+}
+
+.legend{
+    display: flex;
+    gap: 16px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #475569;
+}
+
+.color-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 4px;
+}
+.blue-dot {
+    background-color: #2563eb;
+}
+
+.grey-dot {
+    background-color: #475569;
+}
+
+.chart-body{
+    position: relative;
+    width: 100%;
+    height: 220px;
+}
+
+.chart-body svg{
+    width: 100%;
+    height: 100%;
+}
+
+.months {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 12px;
+    color: #94a3b8;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 0 4px;
+}
+
+.two-chart{
+    display: grid;
+    gap: 24px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    max-width: 1250px;
+    width: 100%;
+}
+
+.pie-chart{
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    border: 1px solid #e5e7eb;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 300px;
+}
+
+.line-chart{
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    border: 1px solid #e5e7eb;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 300px;
+}
+
+.pie-title{
+    font-size: 18px;
+    font-weight: 600;
+    color: #1f2937;
+    margin-bottom: 20px;
+    align-self: flex-start;
+}
+
+.pie-visual {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    background: conic-gradient(
+            #2563eb 0% 30%,
+            #374151 30% 50%,
+            #9ca3af 50% 65%,
+            #475569 65% 100%
+    );
+    position: relative;
+}
+
+.pie-legend {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.pie-legend .legend-item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.color-box {
+    width: 12px;
+    height: 12px;
+    border-radius: 3px;
+}
+
+.line-title{
+    font-size: 18px;
+    font-weight: 600;
+    color: #1f2937;
+    margin-bottom: 20px;
+    align-self: flex-start;
+}
+
+.line-visual {
+    width: 100%;
+    height: 180px;
+    border-left: 2px solid #9ca3af;
+    border-bottom: 2px solid #9ca3af;
+    position: relative;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.line-path {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(37, 99, 235, 0.2) 0%, rgba(37, 99, 235, 0) 100%);
+    clip-path: polygon(0% 80%, 20% 50%, 40% 70%, 60% 30%, 80% 45%, 100% 10%, 100% 100%, 0% 100%);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.line-border {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: none;
+    border: none;
+}
+
+.chart-dot {
+    width: 8px;
+    height: 8px;
+    background-color: #2563eb;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+
+.dot-label{
+    position: absolute;
+    bottom: 12px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 12px;
+    font-weight: 600;
+    color: #374151;
+    white-space: nowrap;
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 2px 6px;
+    border-radius: 4px;
+    pointer-events: none;
+}
