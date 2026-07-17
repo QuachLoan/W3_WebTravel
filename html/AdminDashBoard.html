@@ -141,8 +141,8 @@
                 <tbody>
                 <tr>
                     <td>25021839</td>
-                    <td>Ngo Dai Lam</td>
-                    <td>2026-03-20 03:00</td>
+                    <td class = "name">Ngo Dai Lam</td>
+                    <td class = "date">2026-03-20 03:00</td>
                     <td>$150.00</td>
                     <td><span class="status status-confirmed">Confirmed</span></td>
                     <td>
@@ -155,8 +155,8 @@
                 </tr>
                 <tr>
                     <td>2000202</td>
-                    <td>Quach Loan</td>
-                    <td>2026-01-28 13:00</td>
+                    <td class = "name">Quach Loan</td>
+                    <td class = "date">2026-01-28 13:00</td>
                     <td>$180.00</td>
                     <td><span class="status status-pending">Pending</span></td>
                     <td>
@@ -168,9 +168,9 @@
                     </td>
                 </tr>
                 <tr>
-                    <td>2000203</td>
-                    <td>Quach Ngoc</td>
-                    <td>2026-07-02 02:00</td>
+                    <td >2000203</td>
+                    <td class = "name">Quach Ngoc</td>
+                    <td class = "date">2026-07-02 02:00</td>
                     <td>$180.00</td>
                     <td><span class="status status-cancelled">Cancelled</span></td>
                     <td>
@@ -183,8 +183,8 @@
                 </tr>
                 <tr>
                     <td>2000204</td>
-                    <td>Nguyen Hoang Duong</td>
-                    <td>2026-03-29 07:30</td>
+                    <td class = "name">Nguyen Hoang Duong</td>
+                    <td class = "date">2026-03-29 07:30</td>
                     <td>$180.00</td>
                     <td><span class="status status-cancelled">Cancelled</span></td>
                     <td>
@@ -197,8 +197,8 @@
                 </tr>
                 <tr>
                     <td>2000205</td>
-                    <td>Nguyen Quoc Khanh</td>
-                    <td>2026-07-17 18:36</td>
+                    <td class = "name">Nguyen Quoc Khanh</td>
+                    <td class = "date">2026-07-17 18:36</td>
                     <td>$180.00</td>
                     <td><span class="status status-confirmed">Confirmed</span></td>
                     <td>
@@ -222,6 +222,35 @@
                 <button class="btn-popup btn-cancel" id="cancelDeleteBtn">Cancel</button>
                 <button class="btn-popup btn-confirm" id="confirmDeleteBtn">Delete</button>
             </div>
+        </div>
+    </div>
+    <div class="popup-edit" id="editPopup">
+        <div class="popup-content">
+            <div class="popup-header">
+                <h2>Edit Customer Info</h2>
+            </div>
+            <form id="editForm">
+                <div class="form-group">
+                    <label for="customerName">Customer Name</label>
+                    <input type="text" id="customerName" placeholder="E.g. Ngo Dai Lam" required>
+                </div>
+                <div class="form-group">
+                    <label for="dateTime">Date</label>
+                    <input type="datetime-local" id="dateTime" required>
+                </div>
+                <div class="form-group">
+                    <label for="status">Status</label>
+                    <select id="status">
+                        <option value="confirmed">Confirmed</option>
+                        <option value="pending">Pending</option>
+                        <option value="cancelled">Cancelled</option>
+                    </select>
+                </div>
+                <div class="popup-actions">
+                    <button type = "button" class="btn btn-cancel" id="cancelEditBtn">Cancel</button>
+                    <button type = "submit" class="btn btn-save" id = "saveEditBtn">Save</button>
+                </div>
+            </form>
         </div>
     </div>
 </body>

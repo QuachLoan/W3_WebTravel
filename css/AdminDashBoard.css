@@ -415,6 +415,7 @@ body{
     font-size: 13px;
     font-weight: 600;
     display: inline-block;
+    text-transform: capitalize;
 }
 
 .status-confirmed {
@@ -556,4 +557,115 @@ body{
 }
 .btn-cancel:hover {
     background-color: #e2e8f0;
+}
+
+.popup-edit{
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    bottom: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    background-color: rgba(15, 23, 42, 0.6);
+    backdrop-filter: blur(4px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 99999999999999 !important;;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s ease-in-out;
+}
+
+.popup-edit.active {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.popup-content {
+    background: #fff;
+    padding: 30px;
+    width: 700px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    transform: scale(0.85);
+    transition: transform 0.3s ease;
+}
+
+.popup-edit.active .popup-content {
+    transform: scale(1);
+}
+
+.popup-header {
+    margin-bottom: 20px;
+}
+
+.popup-header h2 {
+    font-size: 20px;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    color: #555;
+    margin-bottom: 8px;
+}
+
+.form-group input, .form-group select {
+    width: 100%;
+    padding: 10px 14px;
+    font-size: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    outline: none;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.form-group input:focus, .form-group select:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.15);
+}
+
+.popup-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+    margin-top: 25px;
+}
+
+.btn {
+    padding: 10px 20px;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.2s;
+    border: none;
+}
+
+.btn-cancel {
+    background-color: #f1f3f5;
+    color: #495057;
+}
+
+.btn-cancel:hover {
+    background-color: #e9ecef;
+}
+
+.btn-save {
+    background-color: #28a745;
+    color: #fff;
+}
+
+.btn-save:hover {
+    background-color: #218838;
 }
