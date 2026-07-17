@@ -171,7 +171,7 @@
                     <td >2000203</td>
                     <td class = "name">Quach Ngoc</td>
                     <td class = "date">2026-07-02 02:00</td>
-                    <td>$180.00</td>
+                    <td>$100.00</td>
                     <td><span class="status status-cancelled">Cancelled</span></td>
                     <td>
                         <div class="action-buttons">
@@ -185,7 +185,7 @@
                     <td>2000204</td>
                     <td class = "name">Nguyen Hoang Duong</td>
                     <td class = "date">2026-03-29 07:30</td>
-                    <td>$180.00</td>
+                    <td>$200.00</td>
                     <td><span class="status status-cancelled">Cancelled</span></td>
                     <td>
                         <div class="action-buttons">
@@ -199,7 +199,7 @@
                     <td>2000205</td>
                     <td class = "name">Nguyen Quoc Khanh</td>
                     <td class = "date">2026-07-17 18:36</td>
-                    <td>$180.00</td>
+                    <td>$50.00</td>
                     <td><span class="status status-confirmed">Confirmed</span></td>
                     <td>
                         <div class="action-buttons">
@@ -249,6 +249,30 @@
                 <div class="popup-actions">
                     <button type = "button" class="btn btn-cancel" id="cancelEditBtn">Cancel</button>
                     <button type = "submit" class="btn btn-save" id = "saveEditBtn">Save</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="popup-edit" id="viewPopup">
+        <div class="popup-content">
+            <div class="popup-header">
+                <h2>Customer Details</h2>
+            </div>
+            <form>
+                <div class="form-group">
+                    <label>Customer Name</label>
+                    <input type="text" id="viewCustomerName" disabled>
+                </div>
+                <div class="form-group">
+                    <label>Date</label>
+                    <input type="text" id="viewDateTime" disabled>
+                </div>
+                <div class="form-group">
+                    <label>Status</label>
+                    <input type="text" id="viewStatus" class="status" disabled style="text-transform: capitalize;">
+                </div>
+                <div class="popup-actions">
+                    <button type="button" class="btn btn-cancel" id="closeViewBtn">Close</button>
                 </div>
             </form>
         </div>

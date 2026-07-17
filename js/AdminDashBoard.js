@@ -8,6 +8,8 @@ var confirmDeleteBtn = document.getElementById('confirmDeleteBtn');
 var editPopup = document.getElementById('editPopup');
 var cancelEditBtn = document.getElementById('cancelEditBtn');
 var editForm = document.getElementById('editForm');
+var closeViewBtn = document.getElementById('closeViewBtn');
+var viewPopup = document.getElementById('viewPopup');
 
 var rowToDelete = null;
 var rowToEdit = null;
@@ -90,6 +92,12 @@ function handleOutsideClick(event) {
     if (event.target === confirmPopup) {
         closePopupDelete();
     }
+    else if (event.target === editPopup) {
+        closePopupEdit();
+    }
+    else if (event.target === viewPopup) {
+        closePopupView();
+    }
 }
 
 function updateToggleIcon() {
@@ -104,6 +112,22 @@ function updateToggleIcon() {
     }
 }
 
+function openPopupView(row) {
+    rowToView = row;
+    var currentName = row.querySelector('.name').innerText;
+    var currentDate = row.querySelector('.date').innerText;
+    var currentStatus = row.querySelector('.status').innerText;
+    document.getElementById('viewCustomerName').value = currentName;
+    document.getElementById('viewDateTime').value = currentDate;
+    document.getElementById('viewStatus').value = currentStatus;
+    viewPopup.classList.add('active');
+}
+
+function closePopupView() {
+    rowToView = null;
+    viewPopup.classList.remove('active');
+}
+
 toggleBtn.addEventListener('click', toggleSidebar);
 bookingTable.addEventListener('click', handleTableClick);
 cancelDeleteBtn.addEventListener('click', closePopupDelete);
@@ -111,3 +135,6 @@ confirmDeleteBtn.addEventListener('click', executeDelete);
 confirmPopup.addEventListener('click', handleOutsideClick);
 editForm.addEventListener('submit', handleFormSubmit);
 cancelEditBtn.addEventListener('click', closePopupEdit);
+closeViewBtn.addEventListener('click', closePopupView);
+viewPopup.addEventListener('click', handleOutsideClick);
+editPopup.addEventListener('click', handleOutsideClick);
