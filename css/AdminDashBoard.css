@@ -17,7 +17,7 @@ body{
     color: #94a3b8;
     display: flex;
     flex-direction: column;
-    height: 900px;
+    min-height: 100vh;
 }
 
 .sidebar-menu {
@@ -61,6 +61,8 @@ body{
     padding: 30px;
     flex-direction: column;
     gap: 24px;
+    flex-grow: 1;
+    overflow-y: auto;
 }
 
 .total-revenue{
@@ -119,7 +121,7 @@ body{
     display: grid;
     gap: 20px;
     grid-template-columns: repeat(4, minmax(0, 1fr));
-    width: 1250px;
+    width: 100%;
 }
 
 .main-header{
@@ -136,7 +138,6 @@ body{
 .chart{
     background-color: #ffffff;
     width: 100%;
-    max-width: 1500px;
     padding: 24px;
     border-radius: 12px;
     border: 1px solid #e2e8f0;
@@ -200,7 +201,6 @@ body{
     display: grid;
     gap: 24px;
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    max-width: 1250px;
     width: 100%;
 }
 
