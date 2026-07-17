@@ -60,111 +60,200 @@
 </header>
 
 
-
-    <div class="container py-5">
-        
+<main>
+    <div class="container" style="padding: 50px;">
         <div class="mb-4">
-            <div class="small text-secondary mb-3">Trang chủ / Thanh toán và xác nhận</div>
+            <div class=" text-secondary mb-3">
+                <span>Home</span> <span class="text-primary ">/ Payment & Confirmation</span>
+            </div>
+
             <div class="d-none d-md-flex align-items-center justify-content-between mx-auto steps-container">
-                <div class="d-flex align-items-center text-secondary fw-medium small">
-                    <span class="step-number bg-secondary text-white me-2">1</span> Chi tiết đặt tour
+                <div class="d-flex align-items-center text-secondary fw-medium ">
+                    <span class="step-number bg-secondary  text-white me-2 ">1</span>
+                    Tour Details
                 </div>
+
                 <div class="line"></div>
-                <div class="d-flex align-items-center text-secondary fw-medium small">
-                    <span class="step-number bg-secondary text-white me-2">2</span> Thông tin khách hàng
+
+                <div class="d-flex align-items-center text-secondary fw-medium ">
+                    <span class="step-number bg-secondary text-white me-2">2</span>
+                    Customer Information
                 </div>
+
                 <div class="line active-line"></div>
-                <div class="d-flex align-items-center text-primary fw-bold small">
-                    <span class="step-number bg-primary text-white me-2">3</span> Thanh toán và xác nhận
+
+                <div class="d-flex align-items-center text-primary fw-bold ">
+                    <span class="step-number bg-primary text-white me-2">3</span>
+                    Payment & Confirmation
                 </div>
             </div>
         </div>
 
         <div class="row g-4">
-            
-            <div class="col-lg-7 d-flex flex-column gap-4">
-                
+
+            <div class="col-lg-6 d-flex flex-column gap-4">
+
                 <div class="card p-4 shadow-sm border-light">
-                    <h5 class="card-title fw-bold mb-4">Tóm tắt đơn hàng</h5>
+                    <h5 class="card-title fw-bold mb-4">Order Summary
+                          <hr>
+                    </h5>
+                  
                     <div class="d-flex gap-3 flex-column flex-sm-row">
-                        <img src="/imgs/bana-hills (25).jpg" alt="Tour Image" class="rounded object-fit-cover tour-img-thumb">
+                        <img src="../imgs/Ba_na.jpg"
+                             alt="Tour Image"
+                             class="rounded object-fit-cover tour-img-thumb">
+
                         <div>
-                            <h6 class="fw-bold mb-2">Đà Nẵng - Hội An - Bà Nà</h6>
-                            <p class="small text-secondary mb-1">⏱ 4 ngày 3 đêm</p>
-                            <p class="small text-secondary mb-1">📅 Khởi hành: 20/06/2024</p>
-                            <p class="small text-secondary mb-1">👤 Số lượng khách: 3 người</p>
-                            <div class="fw-bold text-primary mt-2">3.990.000 đ / người</div>
+                            <h6 class="fw-bold mb-2">Da Nang - Hoi An - Ba Na Hills</h6>
+
+                            <p class=" text-secondary mb-1">
+                                <i class="bi bi-alarm"></i> 4 Days 3 Nights
+                            </p>
+
+                            <p class=" text-secondary mb-1">
+                                <i class="bi bi-calendar-date"></i> Departure Date: June 20, 2024
+                            </p>
+
+                            <p class=" text-secondary mb-1">
+                                <i class="bi bi-people-fill"></i> Number of Travelers: 3
+                            </p>
+
+                            <div class="fw-bold text-primary mt-2">
+                                3,990,000 VND / Person
+                            </div>
                         </div>
                     </div>
                 </div>
 
                 <div class="card p-4 shadow-sm border-light">
-                    <h5 class="card-title fw-bold mb-4">Thông tin khách hàng</h5>
+                    <h5 class="card-title fw-bold mb-4 payment_input">Customer Information</h5>
+
                     <div class="mb-3">
-                        <label class="form-label small text-secondary">Họ và tên</label>
-                        <input type="text" class="form-control bg-light" value="Nguyễn Văn A" disabled>
+                        <label class="form-label  text-secondary">
+                            Full Name
+                        </label>
+
+                        <input
+                            type="text"
+                            class="form-control bg-light"
+                            value="Nguyen Van A"
+                            disabled>
                     </div>
+
                     <div class="row g-3">
+
                         <div class="col-sm-6">
-                            <label class="form-label small text-secondary">Email</label>
-                            <input type="email" class="form-control bg-light" value="nguyenvana@gmail.com" disabled>
+                            <label class="form-label  text-secondary">
+                                Email
+                            </label>
+
+                            <input
+                                type="email"
+                                class="form-control bg-light"
+                                value="nguyenvana@gmail.com"
+                                disabled>
                         </div>
+
                         <div class="col-sm-6">
-                            <label class="form-label small text-secondary">Số điện thoại</label>
-                            <input type="text" class="form-control bg-light" value="0901234567" disabled>
+                            <label class="form-label  text-secondary">
+                                Phone Number
+                            </label>
+
+                            <input
+                                type="text"
+                                class="form-control bg-light"
+                                value="0901234567"
+                                disabled>
                         </div>
+
                     </div>
                 </div>
+
             </div>
 
-            <div class="col-lg-5 d-flex flex-column gap-4">
-                
-                <div class="card p-4 shadow-sm border-light">
-                    <h5 class="card-title fw-bold mb-4">Phương thức thanh toán</h5>
-                    <div class="d-flex flex-column gap-3">
+            <div class="col-lg-6 d-flex flex-column gap-4">
+
+                <div class="card p-5 shadow-sm border-light">
+                    <h5 class="card-title fw-bold mb-4">
+                        Payment Method
+                    </h5>
+
+                    <div class="d-flex flex-column gap-4">
+
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="payment" id="pay1">
-                            <label class="form-check-label small text-dark" for="pay1">Chuyển khoản ngân hàng</label>
+                            <input
+                                class="form-check-input"
+                                type="radio"
+                                name="payment"
+                                id="pay1">
+
+                            <label class="form-check-label  text-dark" for="pay1">
+                                Bank Transfer
+                            </label>
                         </div>
+
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="payment" id="pay2" checked>
-                            <label class="form-check-label small text-dark" for="pay2">Thẻ tín dụng / Ghi nợ</label>
+                            <input
+                                class="form-check-input"
+                                type="radio"
+                                name="payment"
+                                id="pay2"
+                                checked>
+
+                            <label class="form-check-label  text-dark" for="pay2">
+                                Credit / Debit Card
+                            </label>
                         </div>
+
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="payment" id="pay3">
-                            <label class="form-check-label small text-dark" for="pay3">Ví điện tử (MoMo, ZaloPay,...)</label>
+                            <input
+                                class="form-check-input"
+                                type="radio"
+                                name="payment"
+                                id="pay3">
+
+                            <label class="form-check-label  text-dark" for="pay3">
+                                E-Wallet (MoMo, ZaloPay, etc.)
+                            </label>
                         </div>
+
                     </div>
                 </div>
 
-                <div class="card p-4 shadow-sm border-light">
-                    <div class="d-flex justify-content-between small text-secondary mb-2">
-                        <span>Tạm tính</span>
-                        <span>11.970.000 đ</span>
+                <div class="card p-5 shadow-sm border-light">
+
+                    <div class="d-flex justify-content-between  text-secondary mb-2">
+                        <span>Subtotal</span>
+                        <span>11,970,000 VND</span>
                     </div>
-                    <div class="d-flex justify-content-between small text-secondary mb-3">
-                        <span>Thuế và phí</span>
-                        <span>1.200.000 đ</span>
+
+                    <div class="d-flex justify-content-between  text-secondary mb-3">
+                        <span>Taxes & Fees</span>
+                        <span>1,200,000 VND</span>
                     </div>
+
                     <div class="d-flex justify-content-between align-items-center pt-3 border-top">
-                        <span class="fs-5 fw-bold text-dark">Tổng tiền</span>
-                        <span class="fs-5 fw-bold text-primary">13.170.000 đ</span>
+                        <span class="fs-5 fw-bold text-dark">
+                            Total Amount
+                        </span>
+
+                        <span class="fs-5 fw-bold text-primary">
+                            13,170,000 VND
+                        </span>
                     </div>
+
                 </div>
 
-                <button class="btn btn-primary w-100 py-3 fw-bold shadow-sm">Xác nhận thanh toán</button>
+                <button class="btn btn-primary w-100 py-3 fw-bold shadow-sm m-2">
+                    Confirm Payment
+                </button>
+
             </div>
 
         </div>
     </div>
-
-<!-- content -->
-<main>
-    <div class="container">
-
-
-    </div>
 </main>
+
 
 <footer class="footer">
     <div class="container">
@@ -204,7 +293,7 @@
                 </p>
                 <div class="input-group">
                     <input class="form-control" placeholder="Your email"> 
-                    <button class="btn btn-warning">Send</button>
+                    <button class="btn btn-primary">Send</button>
                 </div>
             </div>
             <hr class="my-5">
