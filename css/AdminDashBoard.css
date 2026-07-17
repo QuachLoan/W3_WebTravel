@@ -470,8 +470,8 @@ body{
     bottom: 0 !important;
     width: 100% !important;
     height: 100% !important;
-    margin: 0 !important;  /* Triệt tiêu mọi margin kế thừa gây hở */
-    padding: 0 !important; /* Triệt tiêu mọi padding kế thừa */
+    margin: 0 !important;  
+    padding: 0 !important;
     background-color: rgba(15, 23, 42, 0.6); 
     backdrop-filter: blur(4px);             
     display: flex;
