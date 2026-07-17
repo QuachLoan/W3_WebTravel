@@ -1,26 +1,47 @@
-body {
-    background-color: #f4f7fc;
-    font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+:root{
+
+    --primary:#1B2559;
+    --secondary:rgb(219, 139, 41);
+    --text:#1F2937;
+    --text-light:#6B7280;
+    --background:#F8FAFC;
+    --border:#E5E7EB;
+    
+
 }
 
+ body{
+
+    font-family:"Plus Jakarta Sans",sans-serif;
+    background:var(--background);
+    color:var(--text);
+
+}
+h5,h6{
+    color: var(--text)!important;
+}
 .steps-container {
     max-width: 800px;
 }
-
+.card{
+    border:none;
+    border-radius:16px;
+    box-shadow:0 4px 20px rgba(15,23,42,.06)!important;
+}
 .step-number {
-    width: 24px;
-    height: 24px;
+    width: 35px;
+    height: 35px;
     border-radius: 50%;
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    font-size: 12px;
+    font-size: 16px;
 }
 
 .line {
     flex: 1;
     height: 1px;
-    background-color: #dee2e6;
+    background-color: #c2c4c7;
     margin: 0 15px;
 }
 
@@ -29,7 +50,29 @@ body {
 }
 
 .tour-img-thumb {
-    width: 150px;
-    height: 110px;
+    width: 250px;
+    height: 180px;
+}
+.text-brand{
+    color:var(--primary)!important;
 }
 
+.form-control.payment_input{
+
+    height:48px;
+
+    border-radius:10px;
+
+    border:1px solid var(--border);
+
+    font-size:15px;
+
+}
+
+.form-control:focus{
+
+    border-color:#2563EB;
+
+    box-shadow:0 0 0 .2rem rgba(37,99,235,.15);
+
+}
