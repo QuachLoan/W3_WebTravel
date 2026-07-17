@@ -89,4 +89,34 @@
     font-weight:bold;
 }
 
+.form-control{
+    background-color: #f5f6fa !important;
+    border: 1px solid #dcdfe6;
+}
+
+.form-control:focus{
+    background-color: #f5f6fa !important;
+    box-shadow: none;
+    border-color: #2d6cdf;
+}
+
+.form-select{
+    background-color: #f5f6fa !important;
+    border: 1px solid #dcdfe6;
+}
+
+.form-select:focus{
+    background-color: #f5f6fa !important;
+    box-shadow: none;
+    border-color: #2d6cdf;
+}
+
+textarea.form-control{
+    background-color: #f5f6fa !important;
+}
+
+.input-group-text{
+    background-color: #f5f6fa;
+    border: 1px solid #dcdfe6;
+}
 
