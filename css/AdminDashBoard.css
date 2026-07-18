@@ -41,7 +41,7 @@ body{
 
 .toggle-btn {
     position: absolute;
-    top: 20px;           
+    top: 27px;
     left: 220px;     
     width: 32px;
     height: 32px;
@@ -76,7 +76,7 @@ body{
 }
 
 .sidebar-menu {
-    margin-top: 20px;
+    margin-top: 40px;
     list-style: none;
 }
 
