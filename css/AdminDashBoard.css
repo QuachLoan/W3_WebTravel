@@ -1,16 +1,3 @@
-:root{
-    --primary:#0d6efd;
-    --primary-hover:#1D4ED8;
-    --secondary:#F59E0B;
-
-    --background:#F5F7FB;
-    --surface:#FFFFFF;
-
-    --text:#1F2937;
-    --text-light:#6B7280;
-
-    --border:#E5E7EB;
-}
 *{
     margin: 0;
     padding: 0;
