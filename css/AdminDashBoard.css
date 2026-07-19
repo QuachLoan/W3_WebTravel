@@ -2,19 +2,19 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Inter", sans-serif;
-}
+    font-family:"Plus Jakarta Sans",sans-serif;}
 
 body{
+    background:var(--background);
+    color:var(--text);
     display: flex;
     height: 100vh;
-    background-color: #f1f5f9;
 }
 
 .sidebar{
     width: 240px;
-    background-color: #1e293b;
-    color: #94a3b8;
+    background:#1e293b;    
+    color:var(--text);
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -23,7 +23,7 @@ body{
 
 .toggle-btn {
     position: absolute;
-    top: 20px;           
+    top: 27px;
     left: 220px;     
     width: 32px;
     height: 32px;
@@ -58,7 +58,7 @@ body{
 }
 
 .sidebar-menu {
-    margin-top: 20px;
+    margin-top: 40px;
     list-style: none;
 }
 
@@ -67,22 +67,26 @@ body{
     align-items: center;
     gap: 12px;
     padding: 14px 24px;
-    color: #94a3b8;
-    text-decoration: none;
+     color:#6B7280;    text-decoration: none;
     font-weight: 500;
     transition: 0.2s;
-    border-radius: 5px;
+    border-radius: 10px;
     margin-right: 15px;
     margin-left: 15px;
+    font-size: 20px;
+    line-height: 2.0;
 }
 
 .sidebar-menu a:hover,
 .sidebar-menu a.active {
     color: #ffffff;
     background-color: #334155;
+    padding: 10px;
+    
 }
 .sidebar-menu i {
     width: 20px;
+     color:inherit;
 }
 
 .main-header{
@@ -103,7 +107,7 @@ body{
 }
 
 .total-revenue{
-    background: linear-gradient(135deg, #1e40af, #3b82f6);
+    background: linear-gradient(135deg, #1e40af, #0d6efd);
     color: #ffffff;
     padding: 20px;
     border-radius: 10px;
@@ -129,7 +133,7 @@ body{
 }
 
 .new-booking{
-    background: linear-gradient(135deg, #1e40af, #3b82f6);
+    background: linear-gradient(135deg, #1e40af, #0d6efd);
     color: #ffffff;
     padding: 20px;
     border-radius: 10px;
@@ -207,7 +211,7 @@ body{
     border-radius: 4px;
 }
 .blue-dot {
-    background-color: #2563eb;
+    background-color: #0d6efd;
 }
 
 .grey-dot {
@@ -281,7 +285,7 @@ body{
     height: 180px;
     border-radius: 50%;
     background: conic-gradient(
-            #2563eb 0% 30%,
+            #0d6efd 0% 30%,
             #374151 30% 50%,
             #9ca3af 50% 65%,
             #475569 65% 100%
@@ -349,7 +353,7 @@ body{
 .chart-dot {
     width: 8px;
     height: 8px;
-    background-color: #2563eb;
+    background-color: #0d6efd;
     border: 2px solid #fff;
     border-radius: 50%;
     position: absolute;
@@ -420,7 +424,7 @@ body{
 }
 
 .status-confirmed {
-    background-color: #2563eb;
+    background-color: #0d6efd;
     color: #ffffff;
 }
 
@@ -453,7 +457,7 @@ body{
 }
 
 .btn-view { 
-    color: #2563eb; 
+    color: #0d6efd; 
 }
 
 .btn-edit { 
@@ -632,7 +636,7 @@ body{
 }
 
 .form-group input:focus, .form-group select:focus {
-    border-color: #007bff;
+    border-color: #0d6efd;
     box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.15);
 }
 

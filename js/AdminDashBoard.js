@@ -128,6 +128,47 @@ function closePopupView() {
     viewPopup.classList.remove('active');
 }
 
+function enableRowDragging(tableId) {
+    var table = document.getElementById(tableId);
+    var tbody = table.querySelector("tbody");
+    var rows = tbody.querySelectorAll("tr");
+    for (var i = 0; i < rows.length; i++) {
+        rows[i].setAttribute("draggable", "true");
+        rows[i].style.cursor = "grab";
+    }
+    var dragRow = null;
+    function handleDragStart(e) {
+        dragRow = e.target.closest("tr");
+        if (dragRow) {
+            dragRow.classList.add("dragging");
+        }
+    }
+    function handleDragOver(e) {
+        e.preventDefault();
+        var targetRow = e.target.closest("tr");
+        if (!targetRow || targetRow === dragRow || targetRow.parentElement !== tbody) {
+            return;
+        }
+        var bounding = targetRow.getBoundingClientRect();
+        var offset = e.clientY - bounding.top - bounding.height / 2;
+        if (offset < 0) {
+            tbody.insertBefore(dragRow, targetRow);
+        }
+        else {
+            tbody.insertBefore(dragRow, targetRow.nextSibling);
+        }
+    }
+    function handleDragEnd() {
+        if (dragRow) {
+            dragRow.classList.remove("dragging");
+            dragRow = null;
+        }
+    }
+    tbody.addEventListener("dragstart", handleDragStart);
+    tbody.addEventListener("dragover", handleDragOver);
+    tbody.addEventListener("dragend", handleDragEnd);
+}
+
 toggleBtn.addEventListener('click', toggleSidebar);
 bookingTable.addEventListener('click', handleTableClick);
 cancelDeleteBtn.addEventListener('click', closePopupDelete);
@@ -138,3 +179,4 @@ cancelEditBtn.addEventListener('click', closePopupEdit);
 closeViewBtn.addEventListener('click', closePopupView);
 viewPopup.addEventListener('click', handleOutsideClick);
 editPopup.addEventListener('click', handleOutsideClick);
+enableRowDragging("booking-table");
