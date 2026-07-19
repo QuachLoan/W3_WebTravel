@@ -60,176 +60,193 @@
     </div>
 </header>
 
-<div class="container"></div>
-<div class="booking-progress">
-    <div class="step active">
-        <div class="circle">1</div>
-        <p>Chọn tour</p>
-    </div>
-    <div class="line active"></div>
-    <div class="step active">
-        <div class="circle">2</div>
-        <p>Thông tin khách</p>
-    </div>
-    <div class="line"></div>
-    <div class="step">
-        <div class="circle">3</div>
-        <p>Thanh toán và xác nhận</p>
-    </div>
-</div>
-<div class="container">
+<!-- content -->
+<main>
+    <div class="container" style="padding: 50px;">
+        <div class="mb-4">
+            <div class=" text-secondary mb-3">
+                <span>Home</span> <span class="text-primary ">/ Payment & Confirmation</span>
+            </div>
 
+            <div class="d-none d-md-flex align-items-center justify-content-between mx-auto steps-container">
+                <div class="d-flex align-items-center text-secondary fw-medium ">
+                    <span class="step-number bg-secondary  text-white me-2 ">1</span>
+                    Tour Details
+                </div>
+
+                <div class="line active-line"></div>
+
+                <div class="d-flex align-items-center text-primary fw-bold ">
+                    <span class="step-number bg-primary text-white me-2">2</span>
+                    Customer Information
+                </div>
+
+                <div class="line"></div>
+
+                <div class="d-flex align-items-center text-secondary fw-medium ">
+                    <span class="step-number bg-secondary text-white me-2">3</span>
+                    Payment & Confirmation
+                </div>
+            </div>
+        </div>
+
+<div class="container">
     <div class="row g-4">
         <div class="col-lg-7">
             <div class="card p-4 shadow-sm border-light mb-4">
-                <h5 class="fw-bold mb-4">Chi tiết chuyến đi</h5>
+                <h5 class="fw-bold mb-4">Tour details</h5>
                 <div class="d-flex gap-3">
                     <img src="/imgs/images.jfif"
                         class="rounded tour-img-thumb">
                     <div>
-                        <h6 class="fw-bold">Hà Nội - Long Biên - Hà Đông</h6>
-                        <p class="small text-secondary">
-                            📅 Khởi hành: 20/06/2024
-                        </p>
-                        <p class="small text-secondary">
-                            👤 Số lượng khách: 3 người
-                        </p>
-                        <p class="text-primary fw-bold">
-                            3.990.000đ / người lớn
-                        </p>
-                        <p class="text-primary fw-bold">
-                            2.450.000đ / trẻ em
-                        </p>    
+                         <h5 class="fw-bold mb-3">Hà Nội - Long Biên - Hà Đông</h5>
+                            <p class="text-secondary mb-2">
+                             <i class="bi bi-clock me-2"></i>
+                             4 Days 3 Nights
+                            </p>
+                            <p class="text-secondary mb-2">
+                            <i class="bi bi-calendar3 me-2"></i>
+                            Departure Date: June 20, 2024
+                            </p>
+                            <p class="text-secondary mb-3">
+                            <i class="bi bi-people-fill me-2"></i>
+                             Number of Travelers: 3
+                            </p>
+                             <h4 class="text-primary fw-bold mb-0">
+                             3,990,000 VND / Person
+                             </h4>
                     </div>
                 </div>
             </div>
 
-           
             <div class="card p-4 shadow-sm border-light mb-4">
-                <h5 class="fw-bold mb-4">
-                    <i class="bi bi-person-badge-fill text-primary"></i>
-                    Thông tin liên hệ
-                </h5>
-                <div class="row">
-                    <div class="col-md-6 mb-3">
-                        <label>Họ và tên *</label>
-                        <input type="text" class="form-control"
-                            value="Nguyễn Văn Hói" >
-                    </div>
-                    <div class="col-md-6 mb-3">
-                        <label>Số điện thoại *</label>
-                        <input type="text" class="form-control"
-                            value="0901 234 567" >
-                    </div>
-                    <div class="col-md-6">
-                        <label>Email *</label>
-                        <input type="email" class="form-control"
-                            value="nguyenvanH@gmail.com" >
-                    </div>
-                    <div class="col-md-6">
-                        <label>Địa chỉ</label>
-                        <input type="text" class="form-control"
-                            value="Quận/Huyện, Tỉnh/Thành phố" >
-                    </div>
-                </div>
-            </div>
+    <h5 class="fw-bold mb-4">
+        <i class="bi bi-person-badge-fill text-primary"></i>
+        Contact Information
+    </h5>
 
-            
-            <div class="card p-4 shadow-sm border-light mb-4">
-                <div class="d-flex justify-content-between align-items-center mb-4">
-                    <h5 class="fw-bold mb-4">
-                     <i class="bi bi-people-fill text-primary"></i>
-                        Danh sách hành khách
-                    </h5>
-                     <a href="#" class="text-decoration-none">
-                        <i class="bi bi-plus-lg"></i>
-                        Thêm thành viên
-                     </a>
-                </div>
-                <div class="row mb-3">
-                    <div class="col-md-5">
-                        <label>Họ và tên</label>
-                        <input type="text" class="form-control"
-                            value="Nguyễn Văn A">
-                    </div>
-                    <div class="col-md-3">
-                        <label>Loại</label>
-                        <select class="form-select">
-                            <option selected>Người lớn</option>
-                            <option>Trẻ em</option>
-                        </select>
-                    </div>
-                    <div class="col-md-4">
-                        <label>Ngày sinh</label>
-                        <input type="date" class="form-control">
-                    </div>
-                </div>
-            </div>
+    <div class="row">
+        <div class="col-md-6 mb-3">
+            <label>Full Name *</label>
+            <input type="text" class="form-control" value="Nguyen Van Hoi">
+        </div>
 
-            
-            <div class="card p-4 shadow-sm border-light">
-                <h5 class="fw-bold mb-4">
-                    <i class="bi bi-stars text-primary"></i>
-                    Dịch vụ & Ghi chú
-                </h5>
-                <div class="row">
-                    <div class="col-md-6 mb-3">
-                        <div class="border rounded p-3">
-                            <input type="checkbox">
-                            <label>Bảo hiểm du lịch</label>
-                            <br>
-                            <small class="text-secondary">
-                                +250.000đ / khách
-                            </small>
-                        </div>
-                    </div>
+        <div class="col-md-6 mb-3">
+            <label>Phone Number *</label>
+            <input type="text" class="form-control" value="0901 234 567">
+        </div>
 
-                    <div class="col-md-6 mb-3">
-                        <div class="border rounded p-3">
-                            <input type="checkbox">
-                            <label>Đón tiễn sân bay</label>
-                            <br>
-                            <small class="text-secondary">
-                                +500.000đ / chuyến
-                            </small>
-                        </div>
-                    </div>
+        <div class="col-md-6">
+            <label>Email *</label>
+            <input type="email" class="form-control" value="nguyenvanH@gmail.com">
+        </div>
 
-                   <div class="col-md-6 mb-3">
-                        <div class="border rounded p-3">
-                            <input type="checkbox">
-                            <label>Xe đưa đón riêng</label>
-                            <br>
-                            <small class="text-secondary">
-                                +1.000.000đ / chuyến
-                            </small>
-                        </div>
-                    </div>
-                    <div class="col-md-6 mb-3">
-                        <div class="border rounded p-3">
-                            <input type="checkbox">
-                            <label>Dịch vụ chăm sóc như tổng thống</label>
-                            <br>
-                            <small class="text-secondary">
-                                +20.000.000đ / chuyến
-                            </small>
-                        </div>
-                    </div>
-                </div>
+        <div class="col-md-6">
+            <label>Address</label>
+            <input type="text" class="form-control" value="District/City/Province">
+        </div>
+    </div>
+</div>
 
-                <label>Yêu cầu đặc biệt</label>
+<div class="card p-4 shadow-sm border-light mb-4">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h5 class="fw-bold mb-0">
+            <i class="bi bi-people-fill text-primary"></i>
+            Passenger List
+        </h5>
 
-                <textarea class="form-control" rows="4"
-                    placeholder="VD: Dị ứng thực phẩm, trốn nợ, honeymoon..."></textarea>
+        <a href="#" class="text-decoration-none">
+            <i class="bi bi-plus-lg"></i>
+            Add Passenger
+        </a>
+    </div>
+
+    <div class="row mb-3">
+        <div class="col-md-5">
+            <label>Full Name</label>
+            <input type="text" class="form-control" value="Nguyen Van A">
+        </div>
+
+        <div class="col-md-3">
+            <label>Passenger Type</label>
+            <select class="form-select">
+                <option selected>Adult</option>
+                <option>Child</option>
+            </select>
+        </div>
+
+        <div class="col-md-4">
+            <label>Date of Birth</label>
+            <input type="date" class="form-control">
+        </div>
+    </div>
+</div>
+
+<div class="card p-4 shadow-sm border-light">
+    <h5 class="fw-bold mb-4">
+        <i class="bi bi-stars text-primary"></i>
+        Services & Notes
+    </h5>
+
+    <div class="row">
+        <div class="col-md-6 mb-3">
+            <div class="border rounded p-3">
+                <input type="checkbox">
+                <label>Travel Insurance</label>
+                <br>
+                <small class="text-secondary">
+                    +250,000 VND / Person
+                </small>
             </div>
         </div>
+
+        <div class="col-md-6 mb-3">
+            <div class="border rounded p-3">
+                <input type="checkbox">
+                <label>Airport Transfer</label>
+                <br>
+                <small class="text-secondary">
+                    +500,000 VND / Trip
+                </small>
+            </div>
+        </div>
+
+        <div class="col-md-6 mb-3">
+            <div class="border rounded p-3">
+                <input type="checkbox">
+                <label>Private Shuttle Service</label>
+                <br>
+                <small class="text-secondary">
+                    +1,000,000 VND / Trip
+                </small>
+            </div>
+        </div>
+
+        <div class="col-md-6 mb-3">
+            <div class="border rounded p-3">
+                <input type="checkbox">
+                <label>VIP Presidential Service</label>
+                <br>
+                <small class="text-secondary">
+                    +20,000,000 VND / Trip
+                </small>
+            </div>
+        </div>
+    </div>
+
+    <label>Special Requests</label>
+
+    <textarea class="form-control" rows="4"
+        placeholder="E.g. Food allergies, honeymoon, wheelchair assistance..."></textarea>
+    </div>
+ </div>
 
        
         <div class="col-lg-5">
             <div class="card p-4 shadow-sm border-light">
-                <h5 class="fw-bold mb-4">Thanh toán</h5>
+                <h5 class="fw-bold mb-4">Payment Summary</h5>
                 <div class="mb-3">
-                    <label>Ngày khởi hành</label>
+                    <label>Departure Date</label>
                     <input type="text"
                         class="form-control"
                         value="20/06/2024"
@@ -237,7 +254,7 @@
                 </div>
                 <div class="row mb-4">
                     <div class="col-6">
-                        <label>Người lớn</label>
+                        <label>Adults</label>
                         <select class="form-select">
                             <option>01</option>
                             <option selected>02</option>
@@ -246,7 +263,7 @@
                     </div>
 
                     <div class="col-6">
-                        <label>Trẻ em</label>
+                        <label>Children</label>
                         <select class="form-select">
                             <option>00</option>
                             <option selected>01</option>
@@ -256,36 +273,31 @@
                 </div>
 
                 <div class="d-flex justify-content-between">
-                    <span>2 x Người lớn</span>
+                    <span>2 x Adults</span>
                     <span>7.800.000đ</span>
                 </div>
                 <div class="d-flex justify-content-between mt-2">
-                    <span>1 x Trẻ em</span>
+                    <span>1 x Children</span>
                     <span>2.450.000đ</span>
                 </div>
                 <div class="d-flex justify-content-between mt-2">
-                    <span>Thuế & Phí (10%)</span>
+                    <span>Taxes & Fees (10%)</span>
                     <span>1.025.000đ</span>
                 </div>
                 <hr>
-                <small class="text-secondary">TỔNG CỘNG</small>
+                <small class="text-secondary">TOTAL AMOUNT</small>
                 <h2 class="text-primary fw-bold">
                     11.275.000đ
                 </h2>
             </div>
 
             <button class="btn btn-primary w-100 mt-3 py-3 fw-bold">
-                Tiếp tục thanh toán
+                Proceed to Payment
                 <i class="bi bi-arrow-right ms-2"></i>
             </button>
         </div>
     </div>
 </div>
-    
-
-<!-- content -->
-<main>
-    <div class="container">
 
 
     </div>
