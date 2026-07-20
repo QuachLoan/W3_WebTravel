@@ -6,6 +6,7 @@
 
     <link rel="stylesheet" href="./css/header_footer.css">
     <link rel="stylesheet" href="./css/TourSearch.css">
+    <link rel="stylesheet" href="./css/pmcf.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
@@ -20,7 +21,7 @@
     <div class="container">
         <nav class="navbar navbar-expand-lg py-3">
 
-            <a class="navbar-brand fw-bold logo-text" href="#">
+            <a class="navbar-brand fw-bold logo-text" href="./html/tours_search.html">
                 <span>Vietnam</span><span>Travel</span>    
             </a>
 
@@ -45,10 +46,10 @@
               <form class="d-flex position-relative me-3">
 
                     <i class="bi bi-search position-absolute top-50 start-0 translate-middle-y ms-3"></i>
-                    <input class="form-control ps-5 "type="search"placeholder="Search">
+                    <input class="form-control ps-5"type="search"placeholder="Search">
                             
             </form>
-            <div class="icon_hover d-flex gap-4">
+            <div class="d-flex gap-4">
                <a href="./html/PaymentConfirmation.html" class="nav-link"><i class="bi bi-cart3" style="font-size: 25px;">
                     <span class="position-absolute mt-2 translate-middle p-1 bg-danger border border-light rounded-circle">
                     </span>
@@ -68,10 +69,30 @@
             <div class=" text-secondary mb-3 ">
                 <span>Home</span> <span class="text-primary ">/ Tour search results</span>
             </div>
+            <div class="d-none d-md-flex align-items-center justify-content-between mx-auto steps-container">
+                <div class="d-flex align-items-center text-primary fw-bold ">
+                    <span class="step-number bg-primary  text-white me-2 ">1</span>
+                    Tour Details
+                </div>
+
+                <div class="line"></div>
+
+                <div class="d-flex align-items-center text-secondary fw-medium ">
+                    <span class="step-number bg-secondary text-white me-2">2</span>
+                    Customer Information
+                </div>
+
+                <div class="line "></div>
+
+                <div class="d-flex align-items-center text-secondary  ">
+                    <span class="step-number bg-secondary text-white me-2">3</span>
+                    Payment & Confirmation
+                </div>
+        </div>
         </div>
             <div class="row g-3 ">
                 <div class="col-lg-3  ">
-                    <div class="card shadow-sm border-light p-4" style="line-height: 30px;">
+                    <div class="card shadow-sm border-light p-4" style="line-height: 27.5px;">
                         <h5 class="card-title fw-bold mb-4 ">Filter search</h5>
                         <h7 class="card-title fw-bold mb-2">Search for</h7>
                 <div class="input-group search">
@@ -81,7 +102,7 @@
                 <div class="form-check">
                     <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
                     <label class="form-check-label" for="flexCheckDefault">
-                        Đà Nẵng
+                       Da Nang
                     </label>
                 </div>
                 <div class="form-check">
@@ -93,13 +114,13 @@
                 <div class="form-check">
                     <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
                     <label class="form-check-label" for="flexCheckChecked">
-                        Phú Quốc
+                        Phu Quoc
                     </label>
                 </div>
                 <div class="form-check">
                     <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
                     <label class="form-check-label" for="flexCheckChecked">
-                        Hạ Long
+                        Ha Long
                     </label>
                 </div>
                   <h7 class="card-title fw-bold mt-4">Price Range</h7>
@@ -134,7 +155,40 @@
 
 
                     </div>
-                <a href="#" class="btn btn-primary w-100 ">Apply Filter</a>
+                        <div class="start d-flex gap-2" >
+                         <i class="bi bi-star-fill text-warning"></i>
+                          <i class="bi bi-star-fill text-warning"></i>
+                           <i class="bi bi-star-fill text-warning"></i>
+                             <i class="bi bi-star-fill" style="color:#dbdee4" ></i>
+                             <i class="bi bi-star-fill" style="color:#dbdee4" ></i>
+                    <p style="margin-left: 90px;">3 Star</p>
+
+
+
+                    </div>
+                    <div class="start d-flex gap-2" >
+                         <i class="bi bi-star-fill text-warning"></i>
+                          <i class="bi bi-star-fill text-warning"></i>
+                             <i class="bi bi-star-fill" style="color:#dbdee4" ></i>
+                             <i class="bi bi-star-fill" style="color:#dbdee4" ></i>
+                             <i class="bi bi-star-fill" style="color:#dbdee4" ></i>
+                    <p style="margin-left: 90px;">2 Star</p>
+
+
+
+                    </div>
+                    <div class="start d-flex gap-2" >
+                         <i class="bi bi-star-fill text-warning"></i>
+                             <i class="bi bi-star-fill" style="color:#dbdee4" ></i>
+                             <i class="bi bi-star-fill" style="color:#dbdee4" ></i>
+                             <i class="bi bi-star-fill" style="color:#dbdee4" ></i>
+                             <i class="bi bi-star-fill" style="color:#dbdee4" ></i>
+                    <p style="margin-left: 90px;">1 Star</p>
+
+
+
+                    </div>
+                <a href="#" class="btn btn-primary w-100 mt-1 ">Apply Filter</a>
 
                 </div>
                 
