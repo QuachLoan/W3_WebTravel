@@ -1,0 +1,26 @@
+:root{
+
+    --primary:#1B2559;
+    --secondary:rgb(219, 139, 41);
+    --text:#1F2937;
+    --text-light:#6B7280;
+    --background:#F8FAFC;
+    --border:#E5E7EB;
+    
+
+}
+
+ body{
+
+    font-family:"Plus Jakarta Sans",sans-serif !important;
+    background:var(--background) !important;
+    color:var(--text) !important;
+
+}
+h5,h6{
+    color: var(--text)!important;
+}
+.list-group a:hover{
+    background-color: #0d6efd ;
+    color: var(--border);
+}
